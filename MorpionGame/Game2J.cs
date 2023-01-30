@@ -288,7 +288,7 @@ namespace MorpionGame
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            if (this.tour_1.Visible == true)
+            if (this.tour_1.Visible )
             {
                 this.button2.Text = "X";
                 this.tour2.Visible = true;
@@ -296,7 +296,7 @@ namespace MorpionGame
                 this.button2.Enabled = false;
                 btn2(this.button2.Text);
             }
-            else if (this.tour2.Visible == true)
+            else if (this.tour2.Visible)
             {
                 this.button2.Text = "O";
                 this.tour2.Visible = false;
@@ -307,7 +307,7 @@ namespace MorpionGame
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            if (this.tour_1.Visible == true)
+            if (this.tour_1.Visible)
             {
                 this.button3.Text = "X";
                 this.tour2.Visible = true;
@@ -315,7 +315,7 @@ namespace MorpionGame
                 this.button3.Enabled = false;
                 btn3(this.button3.Text);
             }
-            else if (this.tour2.Visible == true)
+            else if (this.tour2.Visible)
             {
                 this.button3.Text = "O";
                 this.tour2.Visible = false;
@@ -345,7 +345,7 @@ namespace MorpionGame
         }
         private void button5_Click(object sender, EventArgs e)
         {
-            if (this.tour_1.Visible == true)
+            if (this.tour_1.Visible)
             {
                 this.button5.Text = "X";
                 this.tour2.Visible = true;
@@ -353,19 +353,18 @@ namespace MorpionGame
                 this.button5.Enabled = false;
                 btn5(this.button5.Text);
             }
-            else if (this.tour2.Visible == true)
+            else if (this.tour2.Visible)
             {
                 this.button5.Text = "O";
                 this.tour2.Visible = false;
                 this.tour_1.Visible = true;
                 this.button5.Enabled = false;
                 btn5(this.button5.Text);
-            }
-            
+            }          
         }
         private void button6_Click(object sender, EventArgs e)
         {
-            if (this.tour_1.Visible == true)
+            if (this.tour_1.Visible)
             {
                 this.button6.Text = "X";
                 this.tour2.Visible = true;
@@ -373,7 +372,7 @@ namespace MorpionGame
                 this.button6.Enabled = false;
                 btn6(this.button6.Text);
             }
-            else if (this.tour2.Visible == true)
+            else if (this.tour2.Visible)
             {
                 this.button6.Text = "O";
                 this.tour2.Visible = false;
@@ -384,7 +383,7 @@ namespace MorpionGame
         }
         private void button7_Click(object sender, EventArgs e)
         {
-            if (this.tour_1.Visible == true)
+            if (this.tour_1.Visible)
             {
                 this.button7.Text = "X";
                 this.tour2.Visible = true;
@@ -392,7 +391,7 @@ namespace MorpionGame
                 this.button7.Enabled = false;
                 btn7(this.button7.Text);
             }
-            else if (this.tour2.Visible == true)
+            else if (this.tour2.Visible)
             {
                 this.button7.Text = "O";
                 this.tour2.Visible = false;
@@ -403,7 +402,7 @@ namespace MorpionGame
         }
         private void button8_Click(object sender, EventArgs e)
         {
-            if (this.tour_1.Visible == true)
+            if (this.tour_1.Visible)
             {
                 this.button8.Text = "X";
                 this.tour2.Visible = true;
@@ -411,7 +410,7 @@ namespace MorpionGame
                 this.button8.Enabled = false;
                 btn8(this.button8.Text);
             }
-            else if (this.tour2.Visible == true)
+            else if (this.tour2.Visible)
             {
                 this.button8.Text = "O";
                 this.tour2.Visible = false;
@@ -422,7 +421,7 @@ namespace MorpionGame
         }
         private void button9_Click(object sender, EventArgs e)
         {
-            if (this.tour_1.Visible == true)
+            if (this.tour_1.Visible)
             {
                 this.button9.Text = "X";
                 this.tour2.Visible = true;
@@ -430,7 +429,7 @@ namespace MorpionGame
                 this.button9.Enabled = false;
                 btn9(this.button9.Text);
             }
-            else if (this.tour2.Visible == true)
+            else if (this.tour2.Visible)
             {
                 this.button9.Text = "O";
                 this.tour2.Visible = false;
@@ -451,8 +450,11 @@ namespace MorpionGame
             Application.OpenForms[1].Show();
             this.Close();
         }
-        private void label2_Click(object sender, EventArgs e)
+
+        private void Game2joueurs_FormClosed(object sender, FormClosedEventArgs e)
         {
+            Application.OpenForms[0].Dispose();
+         //   Application.OpenForms[1].Dispose();
 
         }
     }

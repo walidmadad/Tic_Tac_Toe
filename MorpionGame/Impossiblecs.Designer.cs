@@ -387,6 +387,7 @@
             this.Name = "Impossiblecs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tic Tac Toe";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Impossiblecs_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

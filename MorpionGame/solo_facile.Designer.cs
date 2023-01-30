@@ -387,6 +387,7 @@
             this.Name = "solo_facile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tic Tac Toe";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.solo_facile_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

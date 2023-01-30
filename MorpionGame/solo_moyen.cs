@@ -2379,5 +2379,10 @@ namespace MorpionGame
                 this.tour_1.Visible = true;
             }
         }
+
+        private void solo_moyen_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.OpenForms[0].Dispose();
+        }
     }
 }

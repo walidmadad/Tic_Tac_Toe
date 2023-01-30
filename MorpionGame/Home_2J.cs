@@ -41,5 +41,10 @@ namespace MorpionGame
             Application.OpenForms[0].Show();
             this.Close();
         }
+
+        private void Menu2joueur_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.OpenForms[0].Dispose();
+        }
     }
 }

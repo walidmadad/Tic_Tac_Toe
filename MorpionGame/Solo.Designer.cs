@@ -129,6 +129,7 @@
             this.Name = "Solo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Solo";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Solo_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -165,6 +165,7 @@
             this.Name = "Menu2joueur";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Menu2joueur_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

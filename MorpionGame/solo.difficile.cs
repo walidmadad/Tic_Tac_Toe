@@ -2511,6 +2511,11 @@ namespace MorpionGame
                 tour_2.Visible = false;
             }
            
-        }        
+        }
+
+        private void solo_difficile_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.OpenForms[0].Dispose();
+        }
     }
 }

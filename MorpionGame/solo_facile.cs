@@ -625,5 +625,10 @@ namespace MorpionGame
             }
         
         }
+
+        private void solo_facile_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.OpenForms[0].Dispose();
+        }
     }
 }

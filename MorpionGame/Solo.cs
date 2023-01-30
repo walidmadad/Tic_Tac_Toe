@@ -47,5 +47,10 @@ namespace MorpionGame
             soloImpo.Show();
             this.Hide();
         }
+
+        private void Solo_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.OpenForms[0].Dispose();
+        }
     }
 }
