@@ -49,16 +49,67 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Game2J.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Game2J.Designer.cs">
+      <DependentUpon>Game2J.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home_2J.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home_2J.Designer.cs">
+      <DependentUpon>Home_2J.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Impossiblecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Impossiblecs.Designer.cs">
+      <DependentUpon>Impossiblecs.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Solo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solo.Designer.cs">
+      <DependentUpon>Solo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solo.difficile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solo.difficile.Designer.cs">
+      <DependentUpon>solo.difficile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solo_facile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solo_facile.Designer.cs">
+      <DependentUpon>solo_facile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="solo_moyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="solo_moyen.Designer.cs">
+      <DependentUpon>solo_moyen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Game2J.resx">
+      <DependentUpon>Game2J.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home_2J.resx">
+      <DependentUpon>Home_2J.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Impossiblecs.resx">
+      <DependentUpon>Impossiblecs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -70,6 +121,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="solo.difficile.resx">
+      <DependentUpon>solo.difficile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solo.resx">
+      <DependentUpon>Solo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solo_facile.resx">
+      <DependentUpon>solo_facile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solo_moyen.resx">
+      <DependentUpon>solo_moyen.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
